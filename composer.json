@@ -13,7 +13,6 @@
         "fruitcake/laravel-cors": "^1.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0",
-        "tucker-eric/eloquentfilter": "^2.3",
         "tymon/jwt-auth": "1.0.0"
     },
     "require-dev": {

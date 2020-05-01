@@ -2,7 +2,8 @@
 
 namespace App\Models;
 
-use EloquentFilter\Filterable;
+use App\Traits\Filterable;
+use App\Traits\Filters\UserFilter;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -10,9 +11,10 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class User extends Authenticatable implements JWTSubject
 {
-    use Notifiable;
     use Filterable;
+    use Notifiable;
     use SoftDeletes;
+    use UserFilter;
 
     /**
      * The attributes that are mass assignable.
