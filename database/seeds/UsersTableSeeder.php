@@ -16,8 +16,8 @@ class UsersTableSeeder extends Seeder
 
         $user = User::find(1);
         $user->name = 'KongWeiMin';
-        $user->password = 'kwm672225801';
-        $user->email = 'kwm672225801@gmail.com';
+        $user->password = '123456';
+        $user->email = 'im.wmkong@gmail.com';
         $user->save();
     }
 }
